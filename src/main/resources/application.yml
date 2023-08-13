@@ -1,0 +1,11 @@
+client-id: spring-client
+token-endpoint: http://localhost:8081/realms/Keycloak-Demo/protocol/openid-connect/token
+client-secret: XOQ7o6Kst77hi9hvunysnYFvxhUX4J2Q
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8081/realms/Keycloak-Demo
+          jwk-set-uri: http://localhost:8081/realms/Keycloak-Demo/protocol/openid-connect/certs
